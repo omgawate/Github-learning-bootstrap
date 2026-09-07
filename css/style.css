@@ -7,3 +7,7 @@ h1{
     padding: 20px;
     margin-top: 20px;
 }
+h1:hover{
+    color: violet;
+
+}
