@@ -11,3 +11,10 @@ h1:hover{
     color: violet;
 
 }
+.bg-purple{
+    background-color: deeppink;
+}
+.nav-item:hover{
+    background-color: coral;
+    border: 2px solid red;
+}
