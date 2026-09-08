@@ -1,103 +1,145 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <header>
-      <!-- bg-purple  use and give other backgroud color and use  external css-->
-      <nav class="navbar navbar-expand-lg bg-dark"  data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="images/logo-light.png" 
-              class="img-fluid"
-              alt="Logo"
-              width="110"
-              height="60"
-              class="d-inline-block align-text-top text-white"
-            />
-            Goods Cafe</a
-          >
-          <button 
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  GALLARY
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="gallery.html">Photo</a></li>
-                  <li><a class="dropdown-item" href="gallery.html">Video</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  
-                </ul>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link" href="services.html">SERVICES</a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link" href="product.html">PRODUCT</a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link active bg-danger" href="contact.html">CONTACT</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-danger" type="submit">
-                Search
-              </button>
-            </form>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <header>
+    <!-- bg-purple  use and give other backgroud color and use  external css-->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo-light.png" class="img-fluid" alt="Logo" width="110" height="60"
+            class="d-inline-block align-text-top text-white" />
+          Goods Cafe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                GALLARY
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="gallery.html">Photo</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gallery.html">Video</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active bg-danger" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="mt-5">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 border border-secondary p-4">
+            <h2>Contact form</h2>
+            <form></form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"></label>
+              Enter Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Snow" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">
+                Enter Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Johnsnow@1234" />
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select Your Coffies </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Add Some Comments</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="button" class="btn btn-danger">Submit</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14670.603678669348!2d75.7491927871582!3d23.18293740000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963743638ffffff%3A0x3024e4d1bd13cc22!2sShri%20Mahakaleshwar%20Jyotirlinga%20Temple!5e0!3m2!1sen!2sin!4v1788900332305!5m2!1sen!2sin"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <main>
-      <h1>This Is Contact Page</h1>
-    </main>
+    <section class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Social Media</h2>
+            <a href="https://www.youtube.com/">
+              <i class="bi bi-youtube social"></i>
+            </a> 
+            <a href="https://www.facebook.com/">
+              <i class="bi bi-facebook social"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="bi bi-instagram social"></i>
+            </a>
+          </div>
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

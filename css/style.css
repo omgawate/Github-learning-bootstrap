@@ -1,4 +1,4 @@
-h1{
+/* h1{
     background-color: aqua;
     color: deeppink;
     text-align: center;
@@ -6,6 +6,19 @@ h1{
     font-size: 50px;
     padding: 20px;
     margin-top: 20px;
+} */
+
+.vision{
+    text-align: center;
+}
+.mission{
+    text-align: center;
+}
+.miss{
+    background-color: chocolate;
+}
+.viss{
+    background-color:cornflowerblue;
 }
 h1:hover{
     color: violet;
@@ -21,4 +34,17 @@ h1:hover{
 .card:hover{
     background-color: burlywood;
     color: white;
+}
+.social{
+    font-size: 50px;
+    margin-left: 15px;
+}
+.bi-youtube{
+    color: red;   
+}
+.bi-facebook{
+    color: #1877F2;
+}
+.bi-instagram{
+    color:#e1306c ;
 }

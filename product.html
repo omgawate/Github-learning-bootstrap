@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,11 +16,11 @@
   <body>
     <header>
       <!-- bg-purple  use and give other backgroud color and use  external css-->
-      <nav class="navbar navbar-expand-lg bg-dark"  data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img
-              src="images/logo-light.png" 
+              src="images/logo-light.png"
               class="img-fluid"
               alt="Logo"
               width="110"
@@ -28,7 +29,7 @@
             />
             Goods Cafe</a
           >
-          <button 
+          <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -42,7 +43,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >HOME</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">ABOUT</a>
@@ -58,19 +61,24 @@
                   GALLARY
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="gallery.html">Photo</a></li>
-                  <li><a class="dropdown-item" href="gallery.html">Video</a></li>
+                  <li>
+                    <a class="dropdown-item" href="gallery.html">Photo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="gallery.html">Video</a>
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
-                  
                 </ul>
               </li>
-               <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" href="services.html">SERVICES</a>
               </li>
-               <li class="nav-item">
-                <a class="nav-link active bg-danger" href="product.html">PRODUCT</a>
+              <li class="nav-item">
+                <a class="nav-link active bg-danger" href="product.html"
+                  >PRODUCT</a
+                >
               </li>
-               <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" href="contact.html">CONTACT</a>
               </li>
             </ul>
@@ -81,9 +89,7 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-danger" type="submit">
-                Search
-              </button>
+              <button class="btn btn-danger" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -91,7 +97,372 @@
     </header>
 
     <main>
-      <h1>This Is Product Page</h1>
+      <section class="bg-secondary">
+        <div class="container pb-3">
+          <div class="row">
+            <h2 class="text-white p-4">OUR COFFIES</h2>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="images/coffie 1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Coffie 1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Coffie"
+                  >
+                    More Info...
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="images/coffie 2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Coffie 2</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                    <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Coffiee"
+                  >
+                    More Info...
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="images/coffie 3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Coffie 3</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                      <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Coffieeee"
+                  >
+                    More Info...
+                      </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="images/coffie 4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Coffie 4</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                   <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Coffie"
+                  >
+                    More Info...
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Model Start -->
+      <div
+        class="modal fade"
+        id="Coffie"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Coffie</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container bg-dark text-white">
+                <div class="row">
+                  <div class="col-md-6 p-4">
+                    <img src="images/coffie 1.jpg" class="img-fluid" />
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nobis at unde ea eius porro maxime numquam, quam ab amet!
+                      Enim esse hic similique error aut molestiae quidem quae
+                      facere adipisci.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nobis at unde ea eius porro maxime numquam, quam ab amet!
+                      Enim esse hic similique error aut molestiae quidem quae
+                      facere adipisci.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/coffie 2.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="images/coffie 4.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="images/coffie 3.jpg" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div
+        class="modal fade"
+        id="Coffiee"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Coffie</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container bg-dark text-white">
+                <div class="row">
+                  <div class="col-md-6 p-4">
+                    <img src="images/coffie 2.jpg" class="img-fluid" />
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nobis at unde ea eius porro maxime numquam, quam ab amet!
+                      Enim esse hic similique error aut molestiae quidem quae
+                      facere adipisci.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nobis at unde ea eius porro maxime numquam, quam ab amet!
+                      Enim esse hic similique error aut molestiae quidem quae
+                      facere adipisci.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/coffie 2.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="images/coffie 4.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="images/coffie 3.jpg" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div
+        class="modal fade"
+        id="Coffieee"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Coffie</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container bg-dark text-white">
+                <div class="row">
+                  <div class="col-md-6 p-4">
+                    <img src="images/coffie 1.jpg" class="img-fluid" />
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nobis at unde ea eius porro maxime numquam, quam ab amet!
+                      Enim esse hic similique error aut molestiae quidem quae
+                      facere adipisci.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nobis at unde ea eius porro maxime numquam, quam ab amet!
+                      Enim esse hic similique error aut molestiae quidem quae
+                      facere adipisci.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/coffie 2.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="images/coffie 4.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="images/coffie 3.jpg" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div
+        class="modal fade"
+        id="Coffieeee"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Coffie</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container bg-dark text-white">
+                <div class="row">
+                  <div class="col-md-6 p-4">
+                    <img src="images/coffie 5.jpg" class="img-fluid" />
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nobis at unde ea eius porro maxime numquam, quam ab amet!
+                      Enim esse hic similique error aut molestiae quidem quae
+                      facere adipisci.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nobis at unde ea eius porro maxime numquam, quam ab amet!
+                      Enim esse hic similique error aut molestiae quidem quae
+                      facere adipisci.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/coffie 2.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="images/coffie 4.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-4">
+                  <img src="images/coffie 3.jpg" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model End -->
     </main>
 
     <script
