@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -43,7 +44,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
+                <a
+                  class="nav-link active bg-danger border border-warning"
+                  aria-current="page"
+                  href="index.html"
                   >HOME</a
                 >
               </li>
@@ -58,7 +62,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  MENU
+                  GALLERY
                 </a>
                 <ul class="dropdown-menu">
                   <li>
@@ -71,10 +75,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">PAGES</a>
+                <a class="nav-link" href="services.html">SERVICES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product.html">BLOG</a>
+                <a class="nav-link" href="product.html">PRODUCT</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">CONTACT</a>
@@ -124,7 +128,11 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/slider 3.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="images/coffie 2.jpg"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>
@@ -133,7 +141,11 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="images/slider1.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="images/coffie 3.jpg"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>
@@ -142,7 +154,11 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="images/slider 2.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="images/coffie 7.jpg"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>
@@ -171,8 +187,138 @@
           </button>
         </div>
       </section>
+      <!-- slider section End -->
+      <!-- About us section Start -->
+
+      <section class="mt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+              <img src="images/coffie 3.jpg" class="img-fluid" />
+            </div>
+            <div class="col-md-7 p-3">
+              <h2>About Us</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium modi voluptatem odit! Adipisci accusantium numquam
+                odit, deserunt ut velit fuga dolore porro repellat blanditiis
+                dicta, placeat quam expedita officia molestiae. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Itaque tempora enim
+                dolorem aliquid quisquam alias natus omnis atque porro? Tempore
+                sed alias at nihil atque nam debitis explicabo asperiores
+                similique!
+              </p>
+
+              <a href="about.html">
+                <button class="btn btn-danger">More Info...</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About us section End -->
+
+      <!-- product section start -->
+
+      <section class="mt-4 bg-dark">
+        <div class="container pb-3">
+          <div class="row">
+            <h2 class="text-white p-4">OUR COFFIES</h2>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="images/coffie 1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Coffie 1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="images/coffie 2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Coffie 2</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="images/coffie 3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Coffie 3</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="images/coffie 4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Coffie 4</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- product section end -->
     </main>
     <!-- Main End -->
+    <footer>
+      <section class="mt-2">
+        <div class="container-fluid bg-dark text-white">
+          <div class="row">
+            <div class="col-md-3 p-4">
+              <img 
+                src="images/logo-light.png"
+                class="img-fluid"
+                alt="Logo"
+                width="110"
+                height="60"
+                class="d-inline-block align-text-top text-white "
+              />
+              <p>
+                This is a Good's Cafe We are Thankful to you come in our cafe thank
+                you very much.
+              </p>
+            </div>
+            <div class="col-md-3 p-4">
+              <a href="about.html ">
+                <button class="btn btn-danger">Quick links...</button>
+              </a>
+            </div>
+            <div class="col-md-3 p-4">
+              <h2>Address</h2>
+              <p>Gurudwara Coliny Near Akrudi Raiway Station
+                Akrudi-443001
+              </p>
+            </div>
+            <div class="col-md-3 p-4">
+              <h2>Contact</h2>
+              <p>Mo.No: 9322209149
+              </p>
+                <p>Mo.No : 9322211691</p>
+                <p>Email : omgawate30@gmail.com</p>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

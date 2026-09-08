@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,19 +15,20 @@
   <body>
     <header>
       <!-- bg-purple  use and give other backgroud color and use  external css-->
-      <nav class="navbar navbar-expand-lg bg-dark"  data-bs-theme="dark">
-        <div class="container">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img
-              src="images/bmw 1.avif" class="img-fluid"
+              src="images/logo-light.png"
+              class="img-fluid"
               alt="Logo"
-              width="40"
-              height="40"
-              class="d-inline-block align-text-top"
+              width="110"
+              height="60"
+              class="d-inline-block align-text-top text-white"
             />
             Goods Cafe</a
           >
-          <button 
+          <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -41,10 +42,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >HOME</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">PAGES</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -54,23 +57,28 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  PORTFOLIO
+                  GALLARY
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="gallery.html">Photo</a></li>
-                  <li><a class="dropdown-item" href="gallery.html">Video</a></li>
+                  <li>
+                    <a class="dropdown-item" href="gallery.html">Photo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="gallery.html">Video</a>
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
-                  
                 </ul>
               </li>
-               <li class="nav-item">
-                <a class="nav-link" href="services.html">BLOG</a>
+              <li class="nav-item">
+                <a class="nav-link active bg-danger" href="services.html"
+                  >SERVICES</a
+                >
               </li>
-               <li class="nav-item">
-                <a class="nav-link" href="product.html">SHOP</a>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">PRODUCT</a>
               </li>
-               <li class="nav-item">
-                <a class="nav-link" href="contact.html">ELEMENT</a>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -80,9 +88,7 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-danger" type="submit">
-                Search
-              </button>
+              <button class="btn btn-danger" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -90,7 +96,254 @@
     </header>
 
     <main>
-      <h1>This Is Services Page</h1>
+      <section class="mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Our Services</h2>
+              <div class="table-responsive">
+                <table
+                  class="table table-primary table-bordered border-primary table-striped table-hover"
+                >
+                  <thead>
+                    <tr class="table-danger">
+                      <th>#</th>
+                      <th>First</th>
+                      <th>Last</th>
+                      <th>Handle</th>
+                      <th>Address</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td>Pune</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                      <td>Mumbai</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>@social</td>
+                      <td>Nashik</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>@social</td>
+                      <td>Delhi</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>@social</td>
+                      <td>Kolkata</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h2>Faq's</h2>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      What does LOREM mean?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        ‘Lorem ipsum dolor sit amet, consectetur adipisici
+                        elit…’ (complete text) is dummy text that is not meant
+                        to mean anything. It is used as a placeholder in
+                        magazine layouts, for example, in order to give an
+                        impression of the finished document. The text is
+                        intentionally unintelligible so that the viewer is not
+                        distracted by the content. The language is not real
+                        Latin and even the first word ‘Lorem’ does not exist. It
+                        is said that the lorem ipsum text has been common among
+                        typesetters since the 16th century.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Are unsold magazines sent back to the publisher?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        We usually sell all copies of the magazines offered in
+                        our shop. Some publishers and distributors offer the
+                        retailer the option of returning any unsold magazines.
+                        However, because our range includes magazines from
+                        countries such as Australia, the USA and the United
+                        Kingdom, sending them back would involve considerable
+                        effort in terms of logistics and would also be very
+                        expensive. We therefore choose not to return any unsold
+                        magazines. At the same time, this allows us to also
+                        offer our customers older or out-of-print magazines.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Do I have the right to return an item?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Yes. If there are any problems with an item, you can
+                        send it back to us and we’ll be pleased to replace it
+                        free of charge. If the item can no longer be delivered,
+                        the money will be refunded in cash or in the form of a
+                        voucher. You must notify us of any problems within seven
+                        days of receiving the item. However, we assume no
+                        liability for damage caused during shipping by the
+                        postal/delivery service. For more information, please
+                        refer to our General Terms & Conditions (GTC).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      Where do I find your physical store and what are your
+                      opening hours?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        We don’t have a physical store location at the moment.
+                        You can order our magazines through our online shop and
+                        we’re shipping all orders with the Swiss Post and DHL
+                        Express to all around the world. Please visit our
+                        shipping section for more details. From time to time you
+                        can find us at design fairs and popup markets in
+                        Switzerland. Subscribe to our newsletter and you’ll
+                        receive the latest news.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      Are you on Facebook, Instagram and other social media
+                      platforms?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h2>ANS 1</h2>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Nobis minima harum quia ipsam, vitae alias
+                              distinctio mollitia dolorum consequuntur pariatur
+                              molestias reprehenderit ullam corporis maxime sit
+                              esse, facere qui dolore!
+                            </p>
+                          </div>
+                          <div class="col-md-6">
+                            <h2>ANS 2</h2>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Officiis quod fugit dolorem corrupti
+                              laudantium, sit ipsam, sequi, corporis perferendis
+                              accusantium molestiae distinctio culpa
+                              exercitationem quasi quidem voluptate tempora
+                              magnam vero!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script

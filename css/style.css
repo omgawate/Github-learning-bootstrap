@@ -12,9 +12,13 @@ h1:hover{
 
 }
 .bg-purple{
-    background-color: deeppink;
+    background-color: darkcyan;
 }
 .nav-item:hover{
     background-color: coral;
     border: 2px solid red;
+}
+.card:hover{
+    background-color: burlywood;
+    color: white;
 }
